@@ -1,3 +1,4 @@
+using UGS;
 using UnityEngine;
 
 namespace Watermelon
@@ -31,6 +32,7 @@ namespace Watermelon
 
         private void Awake()
         {
+            
             instance = this;
 
             CacheComponent(out worldController);
@@ -46,6 +48,8 @@ namespace Watermelon
             CacheComponent(out skinsController);
             CacheComponent(out energyController);
             CacheComponent(out environmentController);
+
+            UnityGoogleSheet.LoadAllData();
 
             Data.Init();
 

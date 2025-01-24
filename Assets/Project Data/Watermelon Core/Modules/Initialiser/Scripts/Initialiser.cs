@@ -26,8 +26,6 @@ namespace Watermelon
         {
             if (!IsInititalized)
             {
-                UnityGoogleSheet.LoadAllData();
-
                 IsInititalized = true;
 
                 InitSettings = initSettings;
