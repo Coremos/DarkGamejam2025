@@ -74,6 +74,12 @@ namespace Watermelon
             int i = 0;
             CurrentPartOfDay = PartsOfDayPresets[i];
 
+            Debug.Log("DayNightCoroutine : " + PartsOfDayPresets.Count);
+            foreach (var parts in PartsOfDayPresets)
+            {
+                Debug.Log(parts.ObjectToString() + " : " + parts.PartOfDayDuration);
+            }
+
             var pause = new WaitUntil(() => DayNightEnabled);
 
             while (true)

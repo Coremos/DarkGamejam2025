@@ -61,8 +61,12 @@ namespace Watermelon
         {
             if (activeUpgradesLink.ContainsKey(type))
                 return activeUpgradesLink[type] as T;
-
-            Debug.LogError($"[Perks]: Upgrade with type {type} isn't registered!");
+            
+            // 수영 업그레이드는 사용 X
+            if (type != GlobalUpgradeType.SwimmingDuration)
+            {
+                Debug.LogError($"[Perks]: Upgrade with type {type} isn't registered!");
+            }
 
             return null;
         }

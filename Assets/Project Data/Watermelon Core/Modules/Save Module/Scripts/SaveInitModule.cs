@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 namespace Watermelon
 {
@@ -11,7 +11,8 @@ namespace Watermelon
 
         public override void CreateComponent(GameObject holderObject)
         {
-            SaveController.Initialise(useAutoSave);
+            // 자동저장 끔
+            SaveController.Initialise(useAutoSave, true);
         }
     }
 }

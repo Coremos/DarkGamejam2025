@@ -161,6 +161,11 @@ namespace Watermelon
 
         private void CalculateDamagePerHit()
         {
+            Debug.Log("hitsToDestroy : " + hitsToDestroy);
+
+            var curStage = upgrade.GetCurrentStage();
+            Debug.Log("hitsToDestroy : " + curStage.DamageMultiplier);
+
             DamagePerHit = 1f / hitsToDestroy * upgrade.GetCurrentStage().DamageMultiplier;
         }
 
