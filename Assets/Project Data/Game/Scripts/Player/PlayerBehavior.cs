@@ -482,6 +482,10 @@ namespace Watermelon
             agent.acceleration = acceleration;
         }
 
+        private int _lastX;
+        [SerializeField] private Transform _playerGraphicTransform;
+        //[SerializeField] private SpriteRenderer _spriteRenderer;
+
         private void MovementUpdate()
         {
             var control = Control.CurrentControl;
@@ -526,8 +530,18 @@ namespace Watermelon
 
                 playerPrevPos = transform.position;
 
-                transform.position += control.MovementInput * Time.deltaTime * speed;
-
+                transform.position += speed * Time.deltaTime * control.MovementInput;
+                int x = Mathf.Abs(control.MovementInput.x) > Mathf.Epsilon ? (int)Mathf.Sign(control.MovementInput.x) : 0;
+                if (x != _lastX)
+                {
+                    _lastX = x;
+                    if (x != 0)
+                    {
+                        //_spriteRenderer.flipX = x < 0;
+                        float width = 0.3f;
+                        _playerGraphicTransform.localScale = new Vector2(x > 0 ? width : -width, _playerGraphicTransform.localScale.y);
+                    }
+                }
                 float multiplier = speed / maxSpeed;
 
                 playerAnimator.SetFloat(MOVEMENT_MULTIPLIER_HASH, multiplier);

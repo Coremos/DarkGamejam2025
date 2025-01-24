@@ -309,6 +309,7 @@ MonoBehaviour:
   fallingParticle: {fileID: 2178599787301174146}
   waterFallingParticle: {fileID: 8477394590298806309}
   customFlyingResourceAnimation: {fileID: 0}
+  _playerGraphicTransform: {fileID: 8910713298319283403}
 --- !u!114 &7566915861322485674
 MonoBehaviour:
   m_ObjectHideFlags: 0
