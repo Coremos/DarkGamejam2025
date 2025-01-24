@@ -1,6 +1,7 @@
-﻿#pragma warning disable 0649
+#pragma warning disable 0649
 
 using System;
+using UGS;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -25,6 +26,8 @@ namespace Watermelon
         {
             if (!IsInititalized)
             {
+                UnityGoogleSheet.LoadAllData();
+
                 IsInititalized = true;
 
                 InitSettings = initSettings;
@@ -50,6 +53,13 @@ namespace Watermelon
 
         public void Initialise(bool loadingScene)
         {
+            //foreach (var value in ReferenceTable.Data.DataList)
+            //{
+            //    Debug.Log(value.index + "," + value.intValue + "," + value.strValue);
+            //}
+            //var dataFromMap = ReferenceTable.Data.DataMap[0];
+            //Debug.Log("dataFromMap : " + dataFromMap.index + ", " + dataFromMap.intValue + "," + dataFromMap.strValue);
+
             if (!IsStartInitialized)
             {
                 IsStartInitialized = true;

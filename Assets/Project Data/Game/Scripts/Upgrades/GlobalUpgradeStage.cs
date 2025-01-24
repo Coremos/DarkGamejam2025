@@ -5,13 +5,13 @@ namespace Watermelon.GlobalUpgrades
     [System.Serializable]
     public abstract class GlobalUpgradeStage
     {
-        [SerializeField] int price;
+        [SerializeField] protected int price;
         public int Price => price;
 
-        [SerializeField] CurrencyType currencyType;
+        [SerializeField] protected CurrencyType currencyType;
         public CurrencyType CurrencyType => currencyType;
 
-        [SerializeField] Sprite previewSprite;
+        [SerializeField] protected Sprite previewSprite;
         public Sprite PreviewSprite => previewSprite;
     }
 }
