@@ -1,0 +1,33 @@
+name: Window Build
+on:
+  workflow_dispatch:
+jobs:
+  buildWindows:
+    name: 💻 Windows-64 Bit
+    runs-on: windows-latest # 윈도우를 사용합니다.
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - uses: actions/cache@v4
+        with:
+          path: Library
+          key: Library-${{ hashFiles('Assets/**', 'Packages/**', 'ProjectSettings/**') }}
+          restore-keys: |
+            Library-
+
+      - name: Build project
+        uses: game-ci/unity-builder@v4
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+        with:
+          targetPlatform: StandaloneWindows64
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Windows Build
+          path: Build
