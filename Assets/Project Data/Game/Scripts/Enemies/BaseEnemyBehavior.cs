@@ -128,11 +128,11 @@ namespace Watermelon
             }
         }
 
-        public void AddPercent(float percent)
+        public void AddPercent(float percent, float value)
         {
             var calc = (1f - percent) * 100f;
             Health.SubtractPercent(calc);
-            Health.Show();
+            Health.AddPercent(value);
         }
 
         public void Spawn(Transform spawnPoint)
