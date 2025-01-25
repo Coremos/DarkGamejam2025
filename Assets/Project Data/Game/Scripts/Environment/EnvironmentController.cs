@@ -25,7 +25,24 @@ namespace Watermelon
 
         public static EnvironmentPreset CurrentPreset { get; private set; }
         public static List<PartOfDayPreset> PartsOfDayPresets { get; private set; }
-        public static PartOfDayPreset CurrentPartOfDay { get; private set; }
+        public static PartOfDayPreset CurrentPartOfDay
+        {
+            get
+            {
+                return _currentPartOfDay;
+            }
+            private set
+            {
+                if (value == _currentPartOfDay) return;
+                _currentPartOfDay = value;
+                bool isDay = _currentPartOfDay == PartsOfDayPresets[0];
+                OnDayChanged?.Invoke(isDay);
+            }
+        }
+
+        private static PartOfDayPreset _currentPartOfDay;
+
+        public static System.Action<bool> OnDayChanged;
 
         private static Light Light { get; set; }
 
@@ -58,6 +75,12 @@ namespace Watermelon
 
             weatherModule = new EnvironmentWeatherModule();
             skyModule = new EnvironmentSkyModule(weatherModule);
+            OnDayChanged += DebugLog;
+        }
+
+        private void DebugLog(bool isDay)
+        {
+            //Debug.Log($"DayChanged Is a day? : {isDay}");
         }
 
         private void Update()
