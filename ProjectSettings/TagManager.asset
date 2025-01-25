@@ -48,6 +48,9 @@ TagManager:
   - name: Field
     uniqueID: 3920755327
     locked: 0
+  - name: FlyingItem
+    uniqueID: 3085706723
+    locked: 0
   m_RenderingLayers:
   - Default
   - Light Layer 1
