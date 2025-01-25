@@ -136,8 +136,14 @@ namespace Watermelon
         // Audio
         private Transform audioListenerTransform;
 
+        private void SetAnimationBool(string name, bool value)
+        {
+            playerAnimator.SetBool(name, value);
+        }
+
         public void Initialise()
         {
+            SetBool += SetAnimationBool;
             playerBehavior = this;
 
             // Cache components
@@ -486,6 +492,7 @@ namespace Watermelon
 
         private int _lastX;
         [SerializeField] private Transform _playerGraphicTransform;
+        public static Action<string, bool> SetBool;
         //[SerializeField] private SpriteRenderer _spriteRenderer;
 
         private void MovementUpdate()
