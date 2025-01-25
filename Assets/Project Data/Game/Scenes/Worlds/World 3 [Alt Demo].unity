@@ -15823,7 +15823,7 @@ MonoBehaviour:
   - {fileID: 1845549978}
   - {fileID: 1528152230}
   registeredNavmeshElements: []
-  environmentPresetType: 1
+  environmentPresetType: 2
   spawnPoint: {fileID: 4214347586600172048}
   helpersRestZone: {fileID: 0}
   helpersRestZoneSize: {x: 2, y: 2}

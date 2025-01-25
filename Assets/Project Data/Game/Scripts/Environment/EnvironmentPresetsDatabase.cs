@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,7 +10,7 @@ namespace Watermelon
 
         public EnvironmentPreset GetPreset(EnvironmentPresetType type)
         {
-            for(int i = 0; i < presets.Count; i++)
+            for (int i = 0; i < presets.Count; i++)
             {
                 if (presets[i].Type == type) return presets[i];
             }
