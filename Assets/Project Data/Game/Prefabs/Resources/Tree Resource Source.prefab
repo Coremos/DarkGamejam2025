@@ -56,6 +56,8 @@ MonoBehaviour:
   snappingDistance: 0
   snappingSpeedMultiplier: 10
   Animator: {fileID: 8974024429836772532}
+  DisableObjects:
+  - {fileID: 371716230876193034}
   hittableId: 0
   restrictMultipleHit: 0
   hitsToDestroy: 5
@@ -146,6 +148,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingLayerID
       value: -374211969
+      objectReference: {fileID: 0}
+    - target: {fileID: 1998455776229836001, guid: a9993dfee99572545a9c6882098d060d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2169201832494018497, guid: a9993dfee99572545a9c6882098d060d,
         type: 3}
