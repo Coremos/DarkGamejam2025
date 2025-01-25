@@ -386,7 +386,7 @@ PrefabInstance:
     - target: {fileID: 766204199978027427, guid: ff5f4b5c5ffdfdb48a4d572ec86f9896,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -1.67
       objectReference: {fileID: 0}
     - target: {fileID: 766204199978027427, guid: ff5f4b5c5ffdfdb48a4d572ec86f9896,
         type: 3}
@@ -432,6 +432,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: StoneMonster_P
+      objectReference: {fileID: 0}
+    - target: {fileID: 8835779496188260096, guid: ff5f4b5c5ffdfdb48a4d572ec86f9896,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8835779496188260096, guid: ff5f4b5c5ffdfdb48a4d572ec86f9896,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8835779496188260096, guid: ff5f4b5c5ffdfdb48a4d572ec86f9896,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

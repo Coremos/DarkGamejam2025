@@ -1,4 +1,5 @@
 using UnityEngine;
+using static Watermelon.SystemTweenCases;
 
 namespace Watermelon
 {
@@ -34,6 +35,11 @@ namespace Watermelon
                 {
                     return;
                 }
+
+                if (tweenObject.name.StartsWith("Sprite-Unlit-Default"))
+                {
+                    return;
+                }                
 
                 startValue = tweenObject.GetColor(colorID);
             }

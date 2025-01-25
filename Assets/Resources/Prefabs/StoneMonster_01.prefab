@@ -808,6 +808,21 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3441005396975007710, guid: 6367d1c319941b646a6d26762dbd9f36,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3441005396975007710, guid: 6367d1c319941b646a6d26762dbd9f36,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3441005396975007710, guid: 6367d1c319941b646a6d26762dbd9f36,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3441005396975007710, guid: 6367d1c319941b646a6d26762dbd9f36,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
