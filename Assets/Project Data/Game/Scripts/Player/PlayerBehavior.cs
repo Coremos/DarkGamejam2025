@@ -905,7 +905,8 @@ namespace Watermelon
                 var data = resourceIndicators[resourceType];
 
                 data.amount += amount;
-                data.floatingText.SetText($"+{data.amount} <sprite name={resourceType}>");
+                //data.floatingText.SetText($"+{data.amount} <sprite name={resourceType}>");
+                data.floatingText.SetText($"+{data.amount}");
             }
             else if (!EnergyController.IsFoorResource(resourceType))
             {
