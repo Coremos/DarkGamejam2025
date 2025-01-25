@@ -22,7 +22,7 @@ QualitySettings:
     globalTextureMipmapLimit: 0
     textureMipmapLimitSettings: []
     anisotropicTextures: 1
-    antiAliasing: 2
+    antiAliasing: 0
     softParticles: 0
     softVegetation: 0
     realtimeReflectionProbes: 0
@@ -35,7 +35,7 @@ QualitySettings:
     adaptiveVsyncExtraB: 0
     lodBias: 0.7
     maximumLODLevel: 0
-    enableLODCrossFade: 0
+    enableLODCrossFade: 1
     streamingMipmapsActive: 0
     streamingMipmapsAddAllCameras: 1
     streamingMipmapsMemoryBudget: 512
@@ -47,7 +47,7 @@ QualitySettings:
     asyncUploadBufferSize: 16
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
-    customRenderPipeline: {fileID: 11400000, guid: 428e5f4f4abaa14439c9642e752babe2,
+    customRenderPipeline: {fileID: 11400000, guid: 579779d0f290d5d499806edc66f89f9e,
       type: 2}
     terrainQualityOverrides: 0
     terrainPixelError: 1
