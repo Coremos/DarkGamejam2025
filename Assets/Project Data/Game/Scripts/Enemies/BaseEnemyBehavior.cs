@@ -122,6 +122,8 @@ namespace Watermelon
                     ResourceSourceBehavior.SetHealth(Health.Percentage);
 
                     ResourceSourceBehavior.gameObject.SetActive(true);
+
+                    ResourceSourceBehavior = null;
                 }
 
                 Unload();

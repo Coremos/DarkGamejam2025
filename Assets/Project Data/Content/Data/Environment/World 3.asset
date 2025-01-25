@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 14c0aa715689d93439983ef48ad35a3c, type: 3}
-  m_Name: World 2
+  m_Name: World 3
   m_EditorClassIdentifier: 
   type: 1
   enabledPartsOfDay: 3

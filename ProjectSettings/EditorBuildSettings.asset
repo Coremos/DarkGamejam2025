@@ -24,4 +24,8 @@ EditorBuildSettings:
     path: Assets/Project Data/Watermelon Core/Extra Components/Haptic/Examples/Scenes/Haptic
       Test.unity
     guid: e730434b98fac584ba6dc410b97c41f5
+  - enabled: 1
+    path: Assets/Project Data/Game/Scenes/Worlds/World 3 [Alt Demo].unity
+    guid: 36bbebef8d7aece458d03868573dbd7d
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0

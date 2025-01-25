@@ -21752,12 +21752,12 @@ PrefabInstance:
     - target: {fileID: 4746191453007924309, guid: 739625e0a4e127746bf6c66af9b3ddcc,
         type: 3}
       propertyPath: offset.x
-      value: -1.0799999
+      value: -2.37
       objectReference: {fileID: 0}
     - target: {fileID: 4746191453007924309, guid: 739625e0a4e127746bf6c66af9b3ddcc,
         type: 3}
       propertyPath: offset.z
-      value: 1.3599999
+      value: -1.3899999
       objectReference: {fileID: 0}
     - target: {fileID: 4746191453007924309, guid: 739625e0a4e127746bf6c66af9b3ddcc,
         type: 3}
@@ -21768,16 +21768,16 @@ PrefabInstance:
         type: 3}
       propertyPath: tileBehavior
       value: 
-      objectReference: {fileID: 1304283598}
+      objectReference: {fileID: 182839101}
     - target: {fileID: 8420286698620644356, guid: 739625e0a4e127746bf6c66af9b3ddcc,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.36
+      value: 5.17
       objectReference: {fileID: 0}
     - target: {fileID: 8420286698620644356, guid: 739625e0a4e127746bf6c66af9b3ddcc,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.36
       objectReference: {fileID: 0}
     - target: {fileID: 8420286698620644356, guid: 739625e0a4e127746bf6c66af9b3ddcc,
         type: 3}
