@@ -115,7 +115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c8b7e39f3e1cc44c8468a897a2d0a77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 0
+  id: 2
   data: {fileID: 0}
 --- !u!1 &3884048145013742559
 GameObject:
@@ -194,6 +194,7 @@ MonoBehaviour:
   dropAnimation: {fileID: 0}
   toolMessageSpawnHeight: 1.5
   visualsParent: {fileID: 1086232453290592709}
+  EnemyType: 0
 --- !u!208 &7407799634748380951
 NavMeshObstacle:
   m_ObjectHideFlags: 0

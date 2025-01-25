@@ -165,6 +165,7 @@ namespace Watermelon
             if (resourceCanvas != null)
                 Destroy(resourceCanvas.gameObject);
 
+            if (gameObject == null) return;
             Destroy(gameObject);
         }
 
