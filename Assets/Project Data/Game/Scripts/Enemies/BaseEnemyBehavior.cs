@@ -115,12 +115,24 @@ namespace Watermelon
         {
             if (true == isDay)
             {
-                ResourceSourceBehavior.transform.position = gameObject.transform.position;
+                if (ResourceSourceBehavior != null)
+                {
+                    ResourceSourceBehavior.transform.position = gameObject.transform.position;
 
-                ResourceSourceBehavior.gameObject.SetActive(true);
+                    ResourceSourceBehavior.SetHealth(Health.Percentage);
 
-                TakeDamage(new DamageSource(1000, null), transform.position);
+                    ResourceSourceBehavior.gameObject.SetActive(true);
+                }
+
+                Unload();
             }
+        }
+
+        public void AddPercent(float percent, float value)
+        {
+            var calc = (1f - percent) * 100f;
+            Health.SubtractPercent(calc);
+            Health.AddPercent(value);
         }
 
         public void Spawn(Transform spawnPoint)

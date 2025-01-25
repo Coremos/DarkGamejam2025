@@ -97,6 +97,8 @@ namespace Watermelon
             Debug.Log(geatheringTask.ToString());
         }
 
+        public float HealthPercentage => Health / MaxHealth;
+
         private void Awake()
         {
             rotatingTransform = new GameObject("RotatingParent").transform;
@@ -166,7 +168,7 @@ namespace Watermelon
         {
             if (false == isDay)
             {
-                SpawnMonster();
+                SpawnEmemy();
             }
         }
 
@@ -229,19 +231,22 @@ namespace Watermelon
             });
         }
 
-        public void SpawnMonster()
+        public void SetHealth(float percent)
+        {
+            Health = MaxHealth * percent;
+        }
+
+        public void SpawnEmemy()
         {
             if (false == gameObject.activeSelf)
-            {
                 return;
-            }
 
-            Debug.Log("SpawnMonster isActive : " + IsActive);
+            if (Health <= 0)
+                return;
 
             var enemy = GameController.Data.EnemiesDatabase.GetEnemyBehavior(EnemyType.Skeleton);
-
             enemy.Spawn(transform);
-
+            enemy.AddPercent(HealthPercentage, 50f); // 현재 체력 비율로 Enemy 체력 설정, 50%를 증가한.
             enemy.ResourceSourceBehavior = this;
 
             gameObject.SetActive(false);
@@ -358,6 +363,7 @@ namespace Watermelon
                 respawnCase = Tween.DelayedCall(respawnDuration, Respawn);
 
                 geatheringTask.Disable();
+                gameObject.SetActive(false);
             }
 
             if (bounceOnHit)
