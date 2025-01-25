@@ -15,7 +15,7 @@ MonoBehaviour:
   unlockableTools:
   - toolType: 2
     customName: Sickle
-    icon: {fileID: 21300000, guid: fed8351ef529f2144b26f0b9d1fea0cb, type: 3}
+    icon: {fileID: 21300000, guid: badc1aef8f287a7478eba994ac8dff02, type: 3}
   - toolType: 8
     customName: Fishing
     icon: {fileID: 21300000, guid: 7c98baae0b5d3d14c9622fe0153afcdc, type: 3}

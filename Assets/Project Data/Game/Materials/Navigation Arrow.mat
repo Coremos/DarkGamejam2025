@@ -26,13 +26,14 @@ Material:
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - CURVE_ON
+  - SPECULAR_ON
   - TOON_ON
   - _SHADOWS_PIXEL
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2000
+  m_CustomRenderQueue: 5000
   stringTagMap:
     RenderType: Opaque
   disabledShaderPasses:
@@ -150,7 +151,7 @@ Material:
     - _GlossyReflections: 0
     - _LightColorInfluence: 1
     - _LightColorOn: 0
-    - _MaxTargetDistance: 4
+    - _MaxTargetDistance: 1
     - _Metallic: 0
     - _OcclusionStrength: 1
     - _OutlineDepthOffset: 0.01
@@ -170,7 +171,7 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _Specular: 0.1
     - _SpecularHighlights: 1
-    - _SpecularOn: 0
+    - _SpecularOn: 1
     - _Speed: 1
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
@@ -199,3 +200,4 @@ Material:
     - _WindTexSize: {r: 1, g: 1, b: 0, a: 0}
     - _WindVelocity: {r: 0.1, g: 0.1, b: 0, a: 0}
   m_BuildTextureStacks: []
+  m_AllowLocking: 1
