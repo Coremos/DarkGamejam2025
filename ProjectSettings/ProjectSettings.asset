@@ -47,7 +47,7 @@ PlayerSettings:
   defaultScreenWidthWeb: 1080
   defaultScreenHeightWeb: 2280
   m_StereoRenderingPath: 0
-  m_ActiveColorSpace: 0
+  m_ActiveColorSpace: 1
   unsupportedMSAAFallback: 0
   m_SpriteBatchMaxVertexCount: 65535
   m_SpriteBatchVertexThreshold: 300
