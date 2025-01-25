@@ -15,7 +15,7 @@ MonoBehaviour:
   skins:
   - prefab: {fileID: 3944532025967960263, guid: 17118aec1367f034baa9a0ab2f7925be,
       type: 3}
-    id: 38ef8571-0e7d-4926-88db-fcb5a8892adb
+    id: 0de968c7-7a1a-4883-90ac-81f043961444
   - prefab: {fileID: 2528254130589353162, guid: 98a52491937ea2846b341690cc9d8fce,
       type: 3}
     id: 290f3b81-10cd-4681-9d75-a93871a9bc58

@@ -309,6 +309,7 @@ MonoBehaviour:
   fallingParticle: {fileID: 2178599787301174146}
   waterFallingParticle: {fileID: 8477394590298806309}
   customFlyingResourceAnimation: {fileID: 0}
+  playerAnimator: {fileID: 1101447745900064544}
   _playerGraphicTransform: {fileID: 8910713298319283403}
 --- !u!114 &7566915861322485674
 MonoBehaviour:
@@ -924,6 +925,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 58c55c66b2a61604fb13811077a978a1, type: 3}
+--- !u!95 &1101447745900064544 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4874341161052445416, guid: 58c55c66b2a61604fb13811077a978a1,
+    type: 3}
+  m_PrefabInstance: {fileID: 5542809185434973640}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8910713298319283403 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3982647852239429891, guid: 58c55c66b2a61604fb13811077a978a1,

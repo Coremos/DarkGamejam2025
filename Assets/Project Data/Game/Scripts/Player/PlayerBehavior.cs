@@ -79,7 +79,7 @@ namespace Watermelon
         private CharacterGraphicsHolder<PlayerGraphics> playerGraphicsHolder;
         public PlayerGraphics PlayerGraphics => playerGraphicsHolder.CharacterGraphics;
 
-        private Animator playerAnimator;
+        [SerializeField] private Animator playerAnimator;
 
         // Resources
         private List<IHitable> hitableObjectsInRange = new List<IHitable>();
@@ -259,7 +259,7 @@ namespace Watermelon
         {
             characterGraphics.Inititalise(this);
 
-            playerAnimator = characterGraphics.Animator;
+            //playerAnimator = characterGraphics.Animator;
         }
 
         public void OnGraphicsUnloaded(PlayerGraphics currentGraphics)
