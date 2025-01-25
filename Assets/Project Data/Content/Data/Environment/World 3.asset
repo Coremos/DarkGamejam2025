@@ -77,13 +77,13 @@ MonoBehaviour:
     cloudsInfluence2: 1
   nightPreset:
     partOfDayDuration: 33
-    lightColor: {r: 0.33962262, g: 0.33962262, b: 0.33962262, a: 1}
+    lightColor: {r: 0.16340333, g: 0.47045192, b: 0.6792453, a: 1}
     shadowsIntensity: 0.2
     rimIntensity: 0.2
     skyGradient:
       serializedVersion: 2
       key0: {r: 0.6018156, g: 0.6521606, b: 0.8679245, a: 1}
-      key1: {r: 0.11160554, g: 0.16941285, b: 0.41509432, a: 1}
+      key1: {r: 0.16647384, g: 0.29463184, b: 0.8207547, a: 1}
       key2: {r: 0.15040937, g: 0.15764962, b: 0.18867922, a: 0}
       key3: {r: 0.15040937, g: 0.15764962, b: 0.18867922, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
