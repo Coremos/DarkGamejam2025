@@ -21,6 +21,8 @@ namespace Watermelon
         public Transform SnappingTransform => transform;
         public Transform Transform => transform;
 
+        public ResourceSourceBehavior ResourceSourceBehavior;
+
         [BoxFoldout("Refs", label: "References")]
         [SerializeField] Collider characterCollider;
         public Collider CharacterCollider => characterCollider;
@@ -100,11 +102,25 @@ namespace Watermelon
 
             Health = GetComponent<HealthBehavior>();
             Health.Initialise(health);
+
+            EnvironmentController.OnDayChanged += OnDayChanged;
         }
 
         private void Update()
         {
             animator.SetFloat(MOVEMENT_NULTIPLIER_HASH, agent.velocity.magnitude / agent.speed);
+        }
+
+        public void OnDayChanged(bool isDay)
+        {
+            if (true == isDay)
+            {
+                ResourceSourceBehavior.transform.position = gameObject.transform.position;
+
+                ResourceSourceBehavior.gameObject.SetActive(true);
+
+                TakeDamage(new DamageSource(1000, null), transform.position);
+            }
         }
 
         public void Spawn(Transform spawnPoint)
@@ -115,8 +131,13 @@ namespace Watermelon
             transform.rotation = spawnPoint.rotation;
             transform.localScale = Vector3.one;
 
-            Health.Restore();
-            Health.Show();
+            if (Health != null)
+            {
+                Health.Restore();
+                Health.Show();
+            }
+
+            spawnParticle.Play();
 
             agent.Warp(spawnPoint.position);
 

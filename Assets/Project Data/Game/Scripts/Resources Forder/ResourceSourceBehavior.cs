@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -141,6 +142,8 @@ namespace Watermelon
             IsActive = true;
 
             defaultScale = visualsParent.localScale;
+
+            EnvironmentController.OnDayChanged += OnDayChanged;
         }
 
         public void OnWorldLoaded()
@@ -157,6 +160,14 @@ namespace Watermelon
 
             respawnCase.KillActive();
             hitCase.KillActive();
+        }
+
+        public void OnDayChanged(bool isDay)
+        {
+            if (false == isDay)
+            {
+                SpawnMonster();
+            }
         }
 
         private void CalculateDamagePerHit()
@@ -220,9 +231,20 @@ namespace Watermelon
 
         public void SpawnMonster()
         {
-            var Enemy = GameController.Data.EnemiesDatabase.GetEnemyBehavior(EnemyType.Skeleton);
+            if (false == gameObject.activeSelf)
+            {
+                return;
+            }
 
-            Enemy.Spawn(transform);
+            Debug.Log("SpawnMonster isActive : " + IsActive);
+
+            var enemy = GameController.Data.EnemiesDatabase.GetEnemyBehavior(EnemyType.Skeleton);
+
+            enemy.Spawn(transform);
+
+            enemy.ResourceSourceBehavior = this;
+
+            gameObject.SetActive(false);
         }
 
         private void Update()
@@ -449,7 +471,7 @@ namespace Watermelon
         [Button("Apply Random Rotation")]
         private void ApplyRandomRotationDev()
         {
-            transform.eulerAngles = transform.eulerAngles.SetY(Random.Range(0f, 360f));
+            transform.eulerAngles = transform.eulerAngles.SetY(UnityEngine.Random.Range(0f, 360f));
 
             RuntimeEditorUtils.SetDirty(gameObject);
         }
