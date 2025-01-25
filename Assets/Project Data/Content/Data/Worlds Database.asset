@@ -14,15 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   worlds:
   - scene:
-      scene: {fileID: 102900000, guid: b987323407a93a541963884fe5cb7501, type: 3}
-      path: Assets/Project Data/Game/Scenes/Worlds/World 2 [Alt Demo].unity
-      name: 'World 2 [Alt Demo]'
-    id: c08736fe-f043-4921-957f-2346226ac7c5
-  - scene:
       scene: {fileID: 102900000, guid: 36bbebef8d7aece458d03868573dbd7d, type: 3}
       path: Assets/Project Data/Game/Scenes/Worlds/World 3 [Alt Demo].unity
       name: 'World 3 [Alt Demo]'
     id: e3d921a3-ea12-4827-bb26-6d4c822a6d5e
+  - scene:
+      scene: {fileID: 102900000, guid: b987323407a93a541963884fe5cb7501, type: 3}
+      path: Assets/Project Data/Game/Scenes/Worlds/World 2 [Alt Demo].unity
+      name: 'World 2 [Alt Demo]'
+    id: c08736fe-f043-4921-957f-2346226ac7c5
   - scene:
       scene: {fileID: 102900000, guid: 099600eb61093244fbc0ea52b433e03d, type: 3}
       path: Assets/Project Data/Game/Scenes/Worlds/World 1 [Full Demo].unity
