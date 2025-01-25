@@ -4819,6 +4819,9 @@ ParticleSystemRenderer:
   m_ReflectionProbeUsage: 0
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4936,7 +4939,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: b3182cc3b67481443826ce41c4aeb042,
         type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: b3182cc3b67481443826ce41c4aeb042,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 7eded9434c5ab9b47a8e63407396bae3, type: 2}
     - target: {fileID: 919132149155446097, guid: b3182cc3b67481443826ce41c4aeb042,

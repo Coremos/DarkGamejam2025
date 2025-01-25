@@ -59,6 +59,7 @@ namespace Watermelon
 
             storingTask = new ConverterStoringTask(this);
             storingTask.Activate();
+            if (LinkedWorldBehavior == null) return;
             storingTask.Register(LinkedWorldBehavior.TaskHandler);
         }
 
