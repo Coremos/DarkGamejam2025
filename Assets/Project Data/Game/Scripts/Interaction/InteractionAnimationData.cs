@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 namespace Watermelon
 {
@@ -16,5 +16,8 @@ namespace Watermelon
 
         [SerializeField] Sprite interactionIcon;
         public Sprite InteractionIcon => interactionIcon;
+
+        [SerializeField] string boolName;
+        public string BoolName => boolName;
     }
 }

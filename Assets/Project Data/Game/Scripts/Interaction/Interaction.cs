@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Watermelon
@@ -80,6 +80,8 @@ namespace Watermelon
             characterAnimator.SetLayerWeight(interactionsLayer, 1.0f);
             characterAnimator.SetBool(ANIMATOR_BOOL_INTERACTION_HASH, true);
             animatorOverrideController["Interaction"] = animationData.AnimationClip;
+            //characterAnimator.SetBool(animationData.BoolName, true);
+            PlayerBehavior.SetBool(animationData.BoolName, true);
 
             activeAnimation = animationData;
 
@@ -94,7 +96,9 @@ namespace Watermelon
         {
             if (activeAnimation != null)
             {
-                if(activeToolBehavior != null)
+                PlayerBehavior.SetBool(activeAnimation.BoolName, false);
+
+                if (activeToolBehavior != null)
                 {
                     activeToolBehavior.OnToolDisabled();
 
