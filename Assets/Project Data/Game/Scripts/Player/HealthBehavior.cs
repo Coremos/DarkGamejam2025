@@ -17,6 +17,8 @@ namespace Watermelon
 
         public bool ShowOnChange { get; set; }
         public bool HideOnFull { get; set; }
+        public float Percentage => CurrentHealth / MaxHealth;
+
 
         public void Initialise(float maxHealth)
         {
