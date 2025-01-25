@@ -923,7 +923,7 @@ namespace Watermelon
                     var data = new ResourceIndicatorData();
 
                     data.amount = amount;
-                    data.floatingText = FloatingTextController.SpawnFloatingText(FULL_FLOATING_TEXT_HASH, $"+{data.amount} <sprite name={resourceType}>", InstanceTransform.position.AddToY(2f), Quaternion.identity, Color.white).GetComponent<FloatingTextBehaviour>();
+                    data.floatingText = FloatingTextController.SpawnFloatingText(FULL_FLOATING_TEXT_HASH, $"+{data.amount} ", InstanceTransform.position.AddToY(2f), Quaternion.identity, Color.white).GetComponent<FloatingTextBehaviour>();
 
                     resourceIndicators.Add(resourceType, data);
 

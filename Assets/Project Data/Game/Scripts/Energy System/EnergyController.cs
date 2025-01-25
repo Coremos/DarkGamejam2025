@@ -134,13 +134,13 @@ namespace Watermelon
                 if (foodConsumedText == null)
                 {
                     lastDisplayedFoodPoints = newPoints;
-                    foodConsumedText = FloatingTextController.SpawnFloatingText(FLOATING_TEXT_HASH, $"+{newPoints} ENERGY <sprite name={currency.CurrencyType}>", PlayerBehavior.InstanceTransform.position.AddToY(2f), Quaternion.identity, Color.white).GetComponent<FloatingTextBehaviour>();
+                    foodConsumedText = FloatingTextController.SpawnFloatingText(FLOATING_TEXT_HASH, $"+{newPoints} ENERGY", PlayerBehavior.InstanceTransform.position.AddToY(2f), Quaternion.identity, Color.white).GetComponent<FloatingTextBehaviour>();
                     foodConsumedText.OnAnimationCompleted += OnFoodConsumedTextAnimationCompleted;
                 }
                 else
                 {
                     lastDisplayedFoodPoints += newPoints;
-                    foodConsumedText.SetText($"+{lastDisplayedFoodPoints} ENERGY <sprite name={currency.CurrencyType}>");
+                    foodConsumedText.SetText($"+{lastDisplayedFoodPoints} ENERGY");
                 }
 
                 CurrenciesController.Substract(currency.CurrencyType, difference);
