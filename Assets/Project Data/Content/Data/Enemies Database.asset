@@ -17,5 +17,5 @@ MonoBehaviour:
     prefab: {fileID: 6026344760361177115, guid: da46134e161a3464993ffdc974ed7aba,
       type: 3}
   - enemyType: 20101
-    prefab: {fileID: 6026344760361177115, guid: 77953f01c6b843e4ba7c183c1dcac035,
+    prefab: {fileID: 6026344760361177115, guid: de9498c62eb31724095d3b1ba4b5268f,
       type: 3}
