@@ -1,7 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
 namespace Watermelon
 {
@@ -9,6 +6,7 @@ namespace Watermelon
     {
         World1,
         World2,
+        World3,
         Tent,
         Cave,
     }

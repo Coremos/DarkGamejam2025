@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Unlockable Tools Database
   m_EditorClassIdentifier: 
   unlockableTools:
-  - toolType: 6
+  - toolType: 2
     customName: Sickle
     icon: {fileID: 21300000, guid: fed8351ef529f2144b26f0b9d1fea0cb, type: 3}
   - toolType: 8

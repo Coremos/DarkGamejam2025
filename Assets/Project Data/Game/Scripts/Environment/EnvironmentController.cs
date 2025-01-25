@@ -133,7 +133,7 @@ namespace Watermelon
 
                 // LIGHT COLOR
                 var environmentLightColor = Color.Lerp(from.LightColor, to.LightColor, t);
-               if(Light != null) Light.color = weatherModule.GetLightColor(environmentLightColor);
+                if (Light != null) Light.color = weatherModule.GetLightColor(environmentLightColor);
 
                 // SKY
                 skyModule.LerpDayPartPresets(from, to, t);
@@ -203,9 +203,9 @@ namespace Watermelon
         {
             Light = FindObjectOfType<Light>();
 
-            if(Light != null && Light.cookie != null && Light.cookie is CustomRenderTexture cloudsTexture)
+            if (Light != null && Light.cookie != null && Light.cookie is CustomRenderTexture cloudsTexture)
             {
-                if(!cachedMaterials.Contains(cloudsTexture.material)) cachedMaterials.Add(cloudsTexture.material);
+                if (!cachedMaterials.Contains(cloudsTexture.material)) cachedMaterials.Add(cloudsTexture.material);
             }
 
             CurrentPreset = Database.GetPreset(type);
@@ -356,7 +356,7 @@ namespace Watermelon
 
         public static void ApplyPresetDev(EnvironmentPreset preset, PartOfDay partOfDay)
         {
-            if(CurrentPreset != preset)
+            if (CurrentPreset != preset)
             {
                 SetPreset(preset.Type);
             }
@@ -384,7 +384,7 @@ namespace Watermelon
 
         private void OnDestroy()
         {
-            for(int i = 0; i < cachedMaterials.Count; i++)
+            for (int i = 0; i < cachedMaterials.Count; i++)
             {
                 var material = cachedMaterials[i];
 
