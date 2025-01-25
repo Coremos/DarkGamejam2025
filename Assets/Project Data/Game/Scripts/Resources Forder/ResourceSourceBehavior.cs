@@ -10,6 +10,8 @@ namespace Watermelon
 {
     public class ResourceSourceBehavior : AbstractHitableBehavior, IGroundOpenable, IWorldElement
     {
+        public Animator Animator;
+
         public int InitialisationOrder => 0;
 
         [Space]
@@ -363,12 +365,16 @@ namespace Watermelon
                 respawnCase = Tween.DelayedCall(respawnDuration, Respawn);
 
                 geatheringTask.Disable();
-                gameObject.SetActive(false);
             }
 
             if (bounceOnHit)
             {
                 visualsParent.localScale = defaultScale * 0.9f;
+            }
+
+            if (Animator != null)
+            {
+                Animator.SetTrigger("Action");
             }
 
             hitCase.KillActive();

@@ -696,6 +696,11 @@ namespace Watermelon
 
         #region Combat
 
+        public void ClearHitableObjectsInRange()
+        {
+            hitableObjectsInRange.Clear();
+        }
+
         public void TakeDamage(DamageSource source, Vector3 hitPosition, bool flash = false)
         {
             if (Health.IsDepleted)

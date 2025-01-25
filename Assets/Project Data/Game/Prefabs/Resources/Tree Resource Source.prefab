@@ -55,6 +55,7 @@ MonoBehaviour:
   hasSnappingDistance: 0
   snappingDistance: 0
   snappingSpeedMultiplier: 10
+  Animator: {fileID: 8974024429836772532}
   hittableId: 0
   restrictMultipleHit: 0
   hitsToDestroy: 5
@@ -296,6 +297,12 @@ MonoBehaviour:
 --- !u!212 &3381904551299403917 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 3494117405651957094, guid: a9993dfee99572545a9c6882098d060d,
+    type: 3}
+  m_PrefabInstance: {fileID: 2203220099943278059}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &8974024429836772532 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7068763200531431775, guid: a9993dfee99572545a9c6882098d060d,
     type: 3}
   m_PrefabInstance: {fileID: 2203220099943278059}
   m_PrefabAsset: {fileID: 0}
