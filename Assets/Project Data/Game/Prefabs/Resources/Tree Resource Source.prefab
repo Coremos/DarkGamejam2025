@@ -35,7 +35,6 @@ Transform:
   m_Children:
   - {fileID: 8779568396460785621}
   - {fileID: 4180596281249464262}
-  - {fileID: 38813392440396330}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1626203775854327850
@@ -137,7 +136,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 8420286698620644356}
+    m_TransformParent: {fileID: 8779568396460785621}
     m_Modifications:
     - target: {fileID: 1691055218096474005, guid: a9993dfee99572545a9c6882098d060d,
         type: 3}
@@ -192,17 +191,17 @@ PrefabInstance:
     - target: {fileID: 2169201832494018497, guid: a9993dfee99572545a9c6882098d060d,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2169201832494018497, guid: a9993dfee99572545a9c6882098d060d,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2169201832494018497, guid: a9993dfee99572545a9c6882098d060d,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2169201832494018497, guid: a9993dfee99572545a9c6882098d060d,
         type: 3}
@@ -276,6 +275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spriteRenderer: {fileID: 3381904551299403917}
+  _sortingOffset: 0
 --- !u!212 &712902187158119038 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 1691055218096474005, guid: a9993dfee99572545a9c6882098d060d,
@@ -301,6 +301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spriteRenderer: {fileID: 712902187158119038}
+  _sortingOffset: 0
 --- !u!212 &3381904551299403917 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 3494117405651957094, guid: a9993dfee99572545a9c6882098d060d,
@@ -647,7 +648,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 84e36b9f274ac6047b01f5f33c41b227, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1be2da053ea235440aab48e0497641c4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 38813392440396330}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4062951860192998597, guid: 1be2da053ea235440aab48e0497641c4,
         type: 3}
