@@ -103,6 +103,8 @@ namespace Watermelon
 
         public float HealthPercentage => Health / MaxHealth;
 
+        public EnemyType EnemyType;
+
         private void Awake()
         {
             rotatingTransform = new GameObject("RotatingParent").transform;
@@ -150,6 +152,26 @@ namespace Watermelon
             defaultScale = visualsParent.localScale;
 
             EnvironmentController.OnDayChanged += OnDayChanged;
+
+            Debug.Log(gameObject.name);
+
+            
+            if (gameObject.name.StartsWith("Tree"))
+            {
+                EnemyType = EnemyType.Tree01;
+            }
+            else if (gameObject.name.StartsWith("Stone"))
+            {
+                EnemyType = EnemyType.Stone01;
+            }
+            else if (gameObject.name.StartsWith("Berry"))
+            {
+                EnemyType = EnemyType.Stone02;
+            }
+            else
+            {
+                EnemyType = EnemyType.Stone03;
+            }
         }
 
         public void OnWorldLoaded()
@@ -252,10 +274,28 @@ namespace Watermelon
             if (Health <= 0)
                 return;
 
-            var enemy = GameController.Data.EnemiesDatabase.GetEnemyBehavior(EnemyType.Tree01);
+            var enemy = GameController.Data.EnemiesDatabase.GetEnemyBehavior(EnemyType);
             enemy.Spawn(transform);
             enemy.AddPercent(HealthPercentage, 50f); // 현재 체력 비율로 Enemy 체력 설정, 50%를 증가한.
             enemy.ResourceSourceBehavior = this;
+            switch (EnemyType)
+            {
+                case EnemyType.Tree01:
+                case EnemyType.Tree02:
+                    enemy.GetAgent().speed = 1.4f;
+                    break;
+                case EnemyType.Stone01:
+                    enemy.GetAgent().speed = 0.8f;
+                    break;
+                case EnemyType.Stone02:
+                    enemy.GetAgent().speed = 1.0f;
+                    break;
+                case EnemyType.Stone03:
+                    enemy.GetAgent().speed = 1.8f;
+                    break;
+                default:
+                    break;
+            }
 
             // enemy.GetAgent().speed = 1.4f
             //나무 1.4

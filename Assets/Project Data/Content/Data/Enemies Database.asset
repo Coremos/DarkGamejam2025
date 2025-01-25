@@ -19,3 +19,15 @@ MonoBehaviour:
   - enemyType: 20101
     prefab: {fileID: 6026344760361177115, guid: de9498c62eb31724095d3b1ba4b5268f,
       type: 3}
+  - enemyType: 20102
+    prefab: {fileID: 6026344760361177115, guid: 44d10bc25ea19594c92ba4e671410f65,
+      type: 3}
+  - enemyType: 20103
+    prefab: {fileID: 6026344760361177115, guid: 942808c412e1cd445aa198e1754e8914,
+      type: 3}
+  - enemyType: 20104
+    prefab: {fileID: 6026344760361177115, guid: 57f733ac0a8655f4b85936eff8a89e3f,
+      type: 3}
+  - enemyType: 20105
+    prefab: {fileID: 6026344760361177115, guid: 7ee94ebb5bf62304db92a135446d830d,
+      type: 3}
