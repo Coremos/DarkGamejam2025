@@ -12,8 +12,8 @@ namespace Watermelon
         public override void Initialise()
         {
             upgrades = ReferenceTable.Upgrade.GetList()
-                .Where(s => s.abilityType1 == "AttackSpeed")
-                .Select(s => AttackSpeedUpgradeStage.Create(s.goldCost, CurrencyType.Coins, null, s.abilityAmount1)).ToArray();
+                .Where(s => s.AbilityType1 == "AttackSpeed")
+                .Select(s => AttackSpeedUpgradeStage.Create(s.GoldCost, CurrencyType.Coins, null, s.AbilityAmount1)).ToArray();
         }
 
         public override string GetUpgradeDescription(int stageId)

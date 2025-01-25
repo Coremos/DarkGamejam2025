@@ -202,6 +202,9 @@ namespace Watermelon
             PlayerSkinsController.SkinSelected += OnSkinSelected;
         }
 
+        Boolean isSpawn = false;
+        float time = 0;
+
         private void Update()
         {
             if (IsDead)
@@ -213,6 +216,22 @@ namespace Watermelon
             MovementUpdate();
             HealthRestorationUpdate();
             HittingUpdate();
+
+            time += Time.deltaTime;
+
+            if (time > 10 && isSpawn == false)
+            {
+                //GameObject.FindObjectsByType<ResourceSourceBehavior>(FindObjectsInactive.Include, FindObjectsSortMode.None)
+                //    .ForEach((obj) =>
+                //    {
+                //        var Enemy = GameController.Data.EnemiesDatabase.GetEnemyBehavior(EnemyType.Skeleton);
+
+                //        Enemy.Spawn(obj.transform);
+
+                //        // Enemy.TakeDamage(new DamageSource(100, null), transform.position);
+                //    });
+                //isSpawn = true;
+            }
         }
 
         #region Swimming

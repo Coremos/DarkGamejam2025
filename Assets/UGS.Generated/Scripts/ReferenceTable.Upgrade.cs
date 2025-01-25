@@ -20,7 +20,7 @@ namespace ReferenceTable
     public partial class Upgrade : ITable
     { 
 
-        public delegate void OnLoadedFromGoogleSheets(List<Upgrade> loadedList, Dictionary<string, Upgrade> loadedDictionary);
+        public delegate void OnLoadedFromGoogleSheets(List<Upgrade> loadedList, Dictionary<int, Upgrade> loadedDictionary);
 
         static bool isLoaded = false;
         static string spreadSheetID = "1N90I7lzhw9EsprQ2oNORRF0VMNXllA627TxA8Ud7g9A"; // it is file id
@@ -29,7 +29,7 @@ namespace ReferenceTable
 
 /* Your Loaded Data Storage. */
     
-        public static Dictionary<string, Upgrade> UpgradeMap = new Dictionary<string, Upgrade>();  
+        public static Dictionary<int, Upgrade> UpgradeMap = new Dictionary<int, Upgrade>();  
         public static List<Upgrade> UpgradeList = new List<Upgrade>();   
 
         /// <summary>
@@ -46,7 +46,7 @@ namespace ReferenceTable
         /// Get Upgrade Dictionary, keyType is your sheet A1 field type.
         /// - Auto Load
         /// </summary>
-        public static Dictionary<string, Upgrade>  GetDictionary()
+        public static Dictionary<int, Upgrade>  GetDictionary()
         {{
            if (isLoaded == false) Load();
            return UpgradeMap;
@@ -56,13 +56,13 @@ namespace ReferenceTable
 
 /* Fields. */
 
-		public System.String id;
-		public System.String upgradeType;
-		public System.String upgradeTitleKey;
-		public System.Int32 level;
-		public System.Int32 goldCost;
-		public System.String abilityType1;
-		public System.Single abilityAmount1;
+		public System.Int32 Id;
+		public System.String UpgradeType;
+		public System.String UpgradeTitleKey;
+		public System.Int32 Level;
+		public System.Int32 GoldCost;
+		public System.String AbilityType1;
+		public System.Single AbilityAmount1;
   
 
 #region fuctions
@@ -89,7 +89,7 @@ namespace ReferenceTable
         }
  
 
-        public static void LoadFromGoogle(System.Action<List<Upgrade>, Dictionary<string, Upgrade>> onLoaded, bool updateCurrentData = false)
+        public static void LoadFromGoogle(System.Action<List<Upgrade>, Dictionary<int, Upgrade>> onLoaded, bool updateCurrentData = false)
         {      
                 IHttpProtcol webInstance = null;
     #if UNITY_EDITOR
@@ -117,8 +117,8 @@ namespace ReferenceTable
                
 
 
-    public static (List<Upgrade> list, Dictionary<string, Upgrade> map) CommonLoad(Dictionary<string, Dictionary<string, List<string>>> jsonObject, bool forceReload){
-            Dictionary<string, Upgrade> Map = new Dictionary<string, Upgrade>();
+    public static (List<Upgrade> list, Dictionary<int, Upgrade> map) CommonLoad(Dictionary<string, Dictionary<string, List<string>>> jsonObject, bool forceReload){
+            Dictionary<int, Upgrade> Map = new Dictionary<int, Upgrade>();
             List<Upgrade> List = new List<Upgrade>();     
             TypeMap.Init();
             FieldInfo[] fields = typeof(Upgrade).GetFields(BindingFlags.Public | BindingFlags.Instance);
@@ -180,7 +180,7 @@ namespace ReferenceTable
                               
                             }
                             List.Add(instance); 
-                            Map.Add(instance.id, instance);
+                            Map.Add(instance.Id, instance);
                         }
                         if(isLoaded == false || forceReload)
                         { 

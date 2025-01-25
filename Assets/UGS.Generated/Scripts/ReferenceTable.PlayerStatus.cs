@@ -20,7 +20,7 @@ namespace ReferenceTable
     public partial class PlayerStatus : ITable
     { 
 
-        public delegate void OnLoadedFromGoogleSheets(List<PlayerStatus> loadedList, Dictionary<string, PlayerStatus> loadedDictionary);
+        public delegate void OnLoadedFromGoogleSheets(List<PlayerStatus> loadedList, Dictionary<int, PlayerStatus> loadedDictionary);
 
         static bool isLoaded = false;
         static string spreadSheetID = "1N90I7lzhw9EsprQ2oNORRF0VMNXllA627TxA8Ud7g9A"; // it is file id
@@ -29,7 +29,7 @@ namespace ReferenceTable
 
 /* Your Loaded Data Storage. */
     
-        public static Dictionary<string, PlayerStatus> PlayerStatusMap = new Dictionary<string, PlayerStatus>();  
+        public static Dictionary<int, PlayerStatus> PlayerStatusMap = new Dictionary<int, PlayerStatus>();  
         public static List<PlayerStatus> PlayerStatusList = new List<PlayerStatus>();   
 
         /// <summary>
@@ -46,7 +46,7 @@ namespace ReferenceTable
         /// Get PlayerStatus Dictionary, keyType is your sheet A1 field type.
         /// - Auto Load
         /// </summary>
-        public static Dictionary<string, PlayerStatus>  GetDictionary()
+        public static Dictionary<int, PlayerStatus>  GetDictionary()
         {{
            if (isLoaded == false) Load();
            return PlayerStatusMap;
@@ -56,8 +56,8 @@ namespace ReferenceTable
 
 /* Fields. */
 
-		public System.String id;
-		public System.String name;
+		public System.Int32 Id;
+		public System.String Name;
 		public System.Single SwingRange;
 		public System.Single AttackRange;
 		public System.Single AttackPower;
@@ -90,7 +90,7 @@ namespace ReferenceTable
         }
  
 
-        public static void LoadFromGoogle(System.Action<List<PlayerStatus>, Dictionary<string, PlayerStatus>> onLoaded, bool updateCurrentData = false)
+        public static void LoadFromGoogle(System.Action<List<PlayerStatus>, Dictionary<int, PlayerStatus>> onLoaded, bool updateCurrentData = false)
         {      
                 IHttpProtcol webInstance = null;
     #if UNITY_EDITOR
@@ -118,8 +118,8 @@ namespace ReferenceTable
                
 
 
-    public static (List<PlayerStatus> list, Dictionary<string, PlayerStatus> map) CommonLoad(Dictionary<string, Dictionary<string, List<string>>> jsonObject, bool forceReload){
-            Dictionary<string, PlayerStatus> Map = new Dictionary<string, PlayerStatus>();
+    public static (List<PlayerStatus> list, Dictionary<int, PlayerStatus> map) CommonLoad(Dictionary<string, Dictionary<string, List<string>>> jsonObject, bool forceReload){
+            Dictionary<int, PlayerStatus> Map = new Dictionary<int, PlayerStatus>();
             List<PlayerStatus> List = new List<PlayerStatus>();     
             TypeMap.Init();
             FieldInfo[] fields = typeof(PlayerStatus).GetFields(BindingFlags.Public | BindingFlags.Instance);
@@ -181,7 +181,7 @@ namespace ReferenceTable
                               
                             }
                             List.Add(instance); 
-                            Map.Add(instance.id, instance);
+                            Map.Add(instance.Id, instance);
                         }
                         if(isLoaded == false || forceReload)
                         { 

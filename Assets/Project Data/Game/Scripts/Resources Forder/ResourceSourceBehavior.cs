@@ -218,6 +218,13 @@ namespace Watermelon
             });
         }
 
+        public void SpawnMonster()
+        {
+            var Enemy = GameController.Data.EnemiesDatabase.GetEnemyBehavior(EnemyType.Skeleton);
+
+            Enemy.Spawn(transform);
+        }
+
         private void Update()
         {
             if (!IsActive)
