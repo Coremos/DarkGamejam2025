@@ -81,7 +81,7 @@ jobs:
           git switch -f ${{ vars.DEPLOYMENT_BRANCH }}
           git reset --hard
           sudo git clean -d -x -f
-          rm -r *
+          rm -rf *
           git add *
           git commit -m "cleaning branch"
           git push
