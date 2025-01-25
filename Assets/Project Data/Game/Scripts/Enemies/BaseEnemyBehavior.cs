@@ -103,6 +103,8 @@ namespace Watermelon
             Health = GetComponent<HealthBehavior>();
             Health.Initialise(health);
 
+            agent.speed = Random.Range(0.5f, 1.5f);
+
             EnvironmentController.OnDayChanged += OnDayChanged;
         }
 
@@ -128,6 +130,11 @@ namespace Watermelon
 
                 Unload();
             }
+        }
+
+        public NavMeshAgent GetAgent()
+        {
+            return agent;
         }
 
         public void AddPercent(float percent, float value)
@@ -172,7 +179,7 @@ namespace Watermelon
 
                 animator.SetTrigger(DIE_TRIGGER);
 
-                Tween.DelayedCall(2f, () =>
+                Tween.DelayedCall(0f, () =>
                 {
                     gameObject.SetActive(false);
                     PlayerBehavior.GetBehavior().OnHittableOutsideRangeOrCompleted(this);

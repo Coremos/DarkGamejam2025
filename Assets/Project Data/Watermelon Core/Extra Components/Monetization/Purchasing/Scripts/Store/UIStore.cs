@@ -92,11 +92,11 @@ namespace Watermelon.IAPStore
 
 // Changelog
 // v 1.2
-// • Added mobile notch offset support
-// • Added free timer money offer
-// • Added ad money offer
+// ?Added mobile notch offset support
+// ?Added free timer money offer
+// ?Added ad money offer
 // v 1.1
-// • Added offers interface
-// • Offers prefabs renamed
+// ?Added offers interface
+// ?Offers prefabs renamed
 // v 1.0
-// • Basic logic
+// ?Basic logic

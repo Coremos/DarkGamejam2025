@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 namespace Watermelon
 {
@@ -29,6 +29,11 @@ namespace Watermelon
             public MaterialColor(int colorID, Material tweenObject, Color resultValue) : base(tweenObject, resultValue)
             {
                 this.colorID = colorID;
+
+                if (tweenObject.name.StartsWith("Sprite-Lit-Default"))
+                {
+                    return;
+                }
 
                 startValue = tweenObject.GetColor(colorID);
             }

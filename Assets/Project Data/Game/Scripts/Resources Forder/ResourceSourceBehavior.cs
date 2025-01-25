@@ -174,6 +174,8 @@ namespace Watermelon
             {
                 SpawnEmemy();
             }
+            Debug.Log("OnDayChanged : " + isDay);
+
         }
 
         private void CalculateDamagePerHit()
@@ -250,10 +252,16 @@ namespace Watermelon
             if (Health <= 0)
                 return;
 
-            var enemy = GameController.Data.EnemiesDatabase.GetEnemyBehavior(EnemyType.Skeleton);
+            var enemy = GameController.Data.EnemiesDatabase.GetEnemyBehavior(EnemyType.Tree01);
             enemy.Spawn(transform);
             enemy.AddPercent(HealthPercentage, 50f); // 현재 체력 비율로 Enemy 체력 설정, 50%를 증가한.
             enemy.ResourceSourceBehavior = this;
+
+            // enemy.GetAgent().speed = 1.4f
+            //나무 1.4
+            //돌 0.8
+            //노란색 1.8
+            //보라색 1.0
 
             gameObject.SetActive(false);
         }
