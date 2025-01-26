@@ -153,8 +153,7 @@ namespace Watermelon
 
             EnvironmentController.OnDayChanged += OnDayChanged;
 
-            Debug.Log(gameObject.name);
-
+            //Debug.Log(gameObject.name);
             
             if (gameObject.name.StartsWith("Tree"))
             {
@@ -196,16 +195,16 @@ namespace Watermelon
             {
                 SpawnEmemy();
             }
-            Debug.Log("OnDayChanged : " + isDay);
+            //Debug.Log("OnDayChanged : " + isDay);
 
         }
 
         private void CalculateDamagePerHit()
         {
-            Debug.Log("hitsToDestroy : " + hitsToDestroy);
+            //Debug.Log("hitsToDestroy : " + hitsToDestroy);
 
             var curStage = upgrade.GetCurrentStage();
-            Debug.Log("hitsToDestroy : " + curStage.DamageMultiplier);
+            //Debug.Log("hitsToDestroy : " + curStage.DamageMultiplier);
 
             DamagePerHit = 1f / hitsToDestroy * upgrade.GetCurrentStage().DamageMultiplier;
         }

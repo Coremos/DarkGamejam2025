@@ -77,11 +77,15 @@ jobs:
     # Deployment
       - name: Cleaning gh-pages branch
         run: |
-          echo "Switch to ${{ vars.DEPLOYMENT_BRANCH }}"
-          git switch -f ${{ vars.DEPLOYMENT_BRANCH }}
+          echo "Switch to deployment"
+          git switch -f deployment
           git reset --hard
           sudo git clean -d -x -f
-          rm -rf *
+          if [ "$(ls -A .)" ]; then
+            rm -r *
+          else
+            echo "Directory is empty, skipping rm"
+          fi
           git add *
           git commit -m "cleaning branch"
           git push
