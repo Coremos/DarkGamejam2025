@@ -48,10 +48,9 @@ jobs:
           sudo swapoff -a
           sudo rm -f /swapfile
           sudo apt clean
-          if [ "$(docker images -q)" != "" ]; then
-            docker rmi $(docker images -q)
-          fi
+          docker rmi $(docker image ls -aq)
           df -h
+
       # # Build
       - name: Build project
         uses: game-ci/unity-builder@v4
