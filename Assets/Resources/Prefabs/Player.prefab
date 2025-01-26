@@ -492,6 +492,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5392386885372299582}
   - component: {fileID: 6667531987706661959}
+  - component: {fileID: 7505492596237393942}
   m_Layer: 0
   m_Name: Weapon_pick
   m_TagString: Untagged
@@ -569,6 +570,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7505492596237393942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5501509755247477122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e5beb82bca358488444eaa7b3bd5dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _spriteRenderer: {fileID: 6667531987706661959}
+  _sortingOffset: 0
 --- !u!1 &5885109131280157026
 GameObject:
   m_ObjectHideFlags: 0
@@ -783,6 +798,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6848691069401130607}
   - component: {fileID: 8224861490403531192}
+  - component: {fileID: 1703634799280948699}
   m_Layer: 0
   m_Name: Weapon_axe
   m_TagString: Untagged
@@ -860,6 +876,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1703634799280948699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7971252904108101120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e5beb82bca358488444eaa7b3bd5dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _spriteRenderer: {fileID: 8224861490403531192}
+  _sortingOffset: 0
 --- !u!1 &8423089199205088512
 GameObject:
   m_ObjectHideFlags: 0
