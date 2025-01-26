@@ -82,7 +82,7 @@ jobs:
           git reset --hard
           sudo git clean -d -x -f
           if [ "$(ls -A .)" ]; then
-            rm -r *
+            rm -rf *
           else
             echo "Directory is empty, skipping rm"
           fi
