@@ -60,7 +60,7 @@ MonoBehaviour:
         type: 3}
       pickUpSound: {fileID: 0}
       useInventory: 1
-      moneyConversionRate: 1
+      moneyConversionRate: 2
     floatingCloud:
       addToCloud: 1
       radius: 200
@@ -78,7 +78,7 @@ MonoBehaviour:
         type: 3}
       pickUpSound: {fileID: 0}
       useInventory: 1
-      moneyConversionRate: 1
+      moneyConversionRate: 3
     floatingCloud:
       addToCloud: 1
       radius: 200
@@ -150,7 +150,7 @@ MonoBehaviour:
         type: 3}
       pickUpSound: {fileID: 0}
       useInventory: 1
-      moneyConversionRate: 1
+      moneyConversionRate: 5
     floatingCloud:
       addToCloud: 1
       radius: 200

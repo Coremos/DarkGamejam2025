@@ -176,7 +176,7 @@ MonoBehaviour:
   DisableObjects: []
   hittableId: 7
   restrictMultipleHit: 1
-  hitsToDestroy: 5
+  hitsToDestroy: 18
   respawnDuration: 50
   hitParticle: {fileID: 5068305678039709698}
   hitAudioClip: {fileID: 8300000, guid: fe3494b152ea5574282d24fdd561b115, type: 3}
