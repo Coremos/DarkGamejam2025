@@ -191,7 +191,7 @@ MonoBehaviour:
   - currency: 2
     amount: 6
   dropRate: 1
-  dropAnimation: {fileID: 0}
+  dropAnimation: {fileID: 11400000, guid: 98b74e4b6c3782b4b896a1f1278a7bfa, type: 2}
   toolMessageSpawnHeight: 1.5
   visualsParent: {fileID: 1086232453290592709}
   EnemyType: 20103

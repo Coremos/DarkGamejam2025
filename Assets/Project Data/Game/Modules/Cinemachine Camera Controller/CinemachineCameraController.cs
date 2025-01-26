@@ -63,6 +63,8 @@ namespace Watermelon
             {
                 cameraController.virtualCameras[i].VirtualCamera.Follow = target;
                 cameraController.virtualCameras[i].VirtualCamera.LookAt = target;
+
+
             }
 
             cameraController.cameraBrain.transform.position = target.position;
@@ -82,6 +84,11 @@ namespace Watermelon
             for (int i = 0; i < cameraController.virtualCameras.Length; i++)
             {
                 cameraController.virtualCameras[i].VirtualCamera.Priority = UNACTIVE_CAMERA_PRIORITY;
+
+                if (cameraController.virtualCameras[i].VirtualCamera.name.StartsWith("Gameplay Virtual Camera"))
+                {
+                    cameraController.virtualCameras[i].VirtualCamera.m_Lens.OrthographicSize = 8.5f;
+                }
             }
 
             activeVirtualCamera = cameraController.virtualCameras[virtualCamerasLink[cameraType]];
