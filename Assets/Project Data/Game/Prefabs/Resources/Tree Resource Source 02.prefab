@@ -59,8 +59,8 @@ MonoBehaviour:
   - {fileID: 1938638595452639121}
   hittableId: 0
   restrictMultipleHit: 0
-  hitsToDestroy: 5
-  respawnDuration: 50
+  hitsToDestroy: 22
+  respawnDuration: 35
   hitParticle: {fileID: 4092584359070745492}
   hitAudioClip: {fileID: 8300000, guid: 743acdd92649a4442a76e58e82411855, type: 3}
   bounceOnHit: 1
@@ -71,9 +71,9 @@ MonoBehaviour:
   helperTaskPriority: 0
   drop:
   - currency: 1
-    amount: 6
+    amount: 11
   - currency: 3
-    amount: 1
+    amount: 2
   dropRate: 1
   dropAnimation: {fileID: 0}
   toolMessageSpawnHeight: 4

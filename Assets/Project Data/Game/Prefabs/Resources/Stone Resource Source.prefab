@@ -178,7 +178,7 @@ MonoBehaviour:
   hittableId: 1
   restrictMultipleHit: 0
   hitsToDestroy: 13
-  respawnDuration: 50
+  respawnDuration: 25
   hitParticle: {fileID: 4447233347651920565}
   hitAudioClip: {fileID: 8300000, guid: 85ff7cd622f53bc438b5f2edaca56e5a, type: 3}
   bounceOnHit: 1
