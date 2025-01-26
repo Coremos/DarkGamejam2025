@@ -17,59 +17,35 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 40b0fd540fe47a645babf66f9630eb31, type: 3}
   descriptionFormat: <color=#FF4233>{0}</color> -> <color=#56D103>{1}
   upgrades:
-  - price: 3
+  - price: 30
     currencyType: 0
     previewSprite: {fileID: 0}
     damageMultiplier: 1
-  - price: 7
+  - price: 70
     currencyType: 0
     previewSprite: {fileID: 0}
     damageMultiplier: 2
-  - price: 11
+  - price: 110
     currencyType: 0
     previewSprite: {fileID: 0}
     damageMultiplier: 3
-  - price: 18
+  - price: 150
     currencyType: 0
     previewSprite: {fileID: 0}
     damageMultiplier: 4
-  - price: 29
+  - price: 200
     currencyType: 0
     previewSprite: {fileID: 0}
     damageMultiplier: 5
-  - price: 47
+  - price: 250
     currencyType: 0
     previewSprite: {fileID: 0}
     damageMultiplier: 6
-  - price: 77
+  - price: 300
     currencyType: 0
     previewSprite: {fileID: 0}
     damageMultiplier: 7
-  - price: 125
+  - price: 350
     currencyType: 0
     previewSprite: {fileID: 0}
     damageMultiplier: 8
-  - price: 204
-    currencyType: 0
-    previewSprite: {fileID: 0}
-    damageMultiplier: 9
-  - price: 332
-    currencyType: 0
-    previewSprite: {fileID: 0}
-    damageMultiplier: 10
-  - price: 541
-    currencyType: 0
-    previewSprite: {fileID: 0}
-    damageMultiplier: 11
-  - price: 882
-    currencyType: 0
-    previewSprite: {fileID: 0}
-    damageMultiplier: 12
-  - price: 1437
-    currencyType: 0
-    previewSprite: {fileID: 0}
-    damageMultiplier: 13
-  - price: 2342
-    currencyType: 0
-    previewSprite: {fileID: 0}
-    damageMultiplier: 14

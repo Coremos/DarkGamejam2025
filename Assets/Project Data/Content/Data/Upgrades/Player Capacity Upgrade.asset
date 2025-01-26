@@ -20,40 +20,40 @@ MonoBehaviour:
   - price: 0
     currencyType: 0
     previewSprite: {fileID: 0}
-    capacity: 200
-  - price: 40
+    capacity: 40
+  - price: 30
     currencyType: 0
     previewSprite: {fileID: 0}
-    capacity: 250
-  - price: 80
+    capacity: 50
+  - price: 60
     currencyType: 0
     previewSprite: {fileID: 0}
-    capacity: 300
-  - price: 140
+    capacity: 60
+  - price: 90
     currencyType: 0
     previewSprite: {fileID: 0}
-    capacity: 320
-  - price: 300
+    capacity: 70
+  - price: 120
     currencyType: 0
     previewSprite: {fileID: 0}
-    capacity: 360
-  - price: 500
+    capacity: 80
+  - price: 150
     currencyType: 0
     previewSprite: {fileID: 0}
-    capacity: 380
-  - price: 900
+    capacity: 90
+  - price: 180
     currencyType: 0
     previewSprite: {fileID: 0}
-    capacity: 400
-  - price: 1500
+    capacity: 100
+  - price: 210
     currencyType: 0
     previewSprite: {fileID: 0}
-    capacity: 420
-  - price: 2000
+    capacity: 110
+  - price: 240
     currencyType: 0
     previewSprite: {fileID: 0}
-    capacity: 440
-  - price: 2500
+    capacity: 120
+  - price: 270
     currencyType: 0
     previewSprite: {fileID: 0}
-    capacity: 460
+    capacity: 130

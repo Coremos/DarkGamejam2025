@@ -22,27 +22,27 @@ MonoBehaviour:
     previewSprite: {fileID: 0}
     playerMovementSpeed: 4.5
     playerAcceleration: 7
-  - price: 50
+  - price: 20
     currencyType: 0
     previewSprite: {fileID: 0}
     playerMovementSpeed: 5
     playerAcceleration: 7.1
-  - price: 220
+  - price: 35
     currencyType: 0
     previewSprite: {fileID: 0}
     playerMovementSpeed: 5.5
     playerAcceleration: 7.3
-  - price: 500
+  - price: 55
     currencyType: 0
     previewSprite: {fileID: 0}
     playerMovementSpeed: 5.8
     playerAcceleration: 7.5
-  - price: 800
+  - price: 80
     currencyType: 0
     previewSprite: {fileID: 0}
     playerMovementSpeed: 6.2
     playerAcceleration: 7.8
-  - price: 1000
+  - price: 110
     currencyType: 0
     previewSprite: {fileID: 0}
     playerMovementSpeed: 6.5
