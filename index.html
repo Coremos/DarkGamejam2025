@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity Web Player | Survival Island Template</title>
+    <title>Unity Web Player | Until Day Comes</title>
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     <canvas id="unity-canvas" width=1080 height=2280 tabindex="-1" style="width: 1080px; height: 2280px; background: #1F1F20"></canvas>
-    <script src="Build/Version0.0.2.loader.js"></script>
+    <script src="Build/Version0.0.3.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -26,13 +26,13 @@
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
         arguments: [],
-        dataUrl: "Build/Version0.0.2.data.unityweb",
-        frameworkUrl: "Build/Version0.0.2.framework.js.unityweb",
-        codeUrl: "Build/Version0.0.2.wasm.unityweb",
+        dataUrl: "Build/Version0.0.3.data.unityweb",
+        frameworkUrl: "Build/Version0.0.3.framework.js.unityweb",
+        codeUrl: "Build/Version0.0.3.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
-        productName: "Survival Island Template",
-        productVersion: "1.0.2",
+        companyName: "MondayPawn",
+        productName: "Until Day Comes",
+        productVersion: "1.0.0",
         // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
       });
