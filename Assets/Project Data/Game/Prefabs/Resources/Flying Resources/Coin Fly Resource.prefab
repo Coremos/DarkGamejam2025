@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2074585881970247105}
   - component: {fileID: 2011769534036494389}
   - component: {fileID: 7065482299890536082}
+  - component: {fileID: 1163193949781204675}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -28,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8782730826008636570}
@@ -74,11 +75,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1209260573
+  m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: 45bfdbffc1cb8b443a78f320a6a0b8f2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -101,6 +101,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f747bd1db8cb5b4cb40dbe49bd3cb5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1163193949781204675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3667030426660999721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e5beb82bca358488444eaa7b3bd5dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _spriteRenderer: {fileID: 2011769534036494389}
+  _sortingOffset: 0
 --- !u!1 &3912945604614884336
 GameObject:
   m_ObjectHideFlags: 0
@@ -236,6 +250,11 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 3f8c12fb22654ad499c6d88d7d1fc114,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 3f8c12fb22654ad499c6d88d7d1fc114,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 3f8c12fb22654ad499c6d88d7d1fc114,
