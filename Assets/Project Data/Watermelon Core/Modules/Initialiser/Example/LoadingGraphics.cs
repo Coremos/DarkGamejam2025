@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
@@ -17,7 +17,7 @@ namespace Watermelon
 
             canvasScaler.matchWidthOrHeight = UIUtils.IsWideScreen(loadingCamera) ? 1 : 0;
 
-            OnLoading(0.0f, "Loading..");
+            OnLoading(0.0f, "로딩중..");
         }
 
         private void OnEnable()
