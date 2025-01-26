@@ -130,6 +130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ResourceSourceBehavior: {fileID: 0}
+  ModelPrefab: {fileID: 1798397382194100275}
   characterCollider: {fileID: 4307232049617709619}
   animator: {fileID: 98809715365538968}
   agent: {fileID: 1225750900314405440}
@@ -1065,6 +1066,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _spriteRenderer: {fileID: 0}
   _sortingOffset: 3
+--- !u!1 &1798397382194100275 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9068378889147131461, guid: 6367d1c319941b646a6d26762dbd9f36,
+    type: 3}
+  m_PrefabInstance: {fileID: 7290318898743729782}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1883869932925907189 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9153763951416815235, guid: 6367d1c319941b646a6d26762dbd9f36,

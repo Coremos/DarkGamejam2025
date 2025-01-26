@@ -23,6 +23,8 @@ namespace Watermelon
         public Transform Transform => transform;
 
         public ResourceSourceBehavior ResourceSourceBehavior;
+        [BoxFoldout("Refs", label: "References")]
+        [SerializeField] GameObject ModelPrefab;
 
         [BoxFoldout("Refs", label: "References")]
         [SerializeField] Collider characterCollider;
@@ -111,33 +113,12 @@ namespace Watermelon
         {
             animator.SetFloat(MOVEMENT_NULTIPLIER_HASH, agent.velocity.magnitude / agent.speed);
 
-            // 캐릭터를 바라보는 방향 계산
-            //Vector3 directionToCharacter = PlayerBehavior.GetBehavior().transform.position - transform.position;
+            PlayerBehavior player = PlayerBehavior.GetBehavior();
+            Vector3 dir = player.transform.position - transform.position;
 
-            //// y축 고정 (수평만 고려)
-            //directionToCharacter.y = 0;
-
-            //if (directionToCharacter.sqrMagnitude < 0.01f) return; // 너무 가까운 경우 처리 방지
-
-            //// 캐릭터를 바라보는 회전 계산
-            //Quaternion lookRotation = Quaternion.LookRotation(directionToCharacter);
-
-            //// 180도 회전 추가
-            //Quaternion rotatedRotation = lookRotation * Quaternion.Euler(0, 180, 0);
-
-            //// 회전 적용
-            //transform.rotation = Quaternion.Lerp(transform.rotation, rotatedRotation, Time.deltaTime * 10f); // 부드럽게 회전
-
-            //PlayerBehavior player = PlayerBehavior.GetBehavior();
-
-            //Vector3 dir = player.transform.position - transform.position;
-
-            // 타겟 방향으로 회전함
-            //float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-            //transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-
-            //float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-            //transform.rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
+            // 타겟 방향으로 rotation
+            float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+            ModelPrefab.transform.eulerAngles = new Vector3(0f, angle, 0f);
         }
 
         public void OnDayChanged(bool isDay)
