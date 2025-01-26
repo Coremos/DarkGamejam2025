@@ -285,16 +285,16 @@ namespace Watermelon
             {
                 case EnemyType.Tree01:
                 case EnemyType.Tree02:
-                    enemy.GetAgent().speed = 1.4f;
+                    enemy.GetAgent().speed = 1.4f * 1.8f;
                     break;
                 case EnemyType.Stone01:
-                    enemy.GetAgent().speed = 0.8f;
+                    enemy.GetAgent().speed = 0.8f * 1.8f;
                     break;
                 case EnemyType.Stone02:
-                    enemy.GetAgent().speed = 1.0f;
+                    enemy.GetAgent().speed = 1.0f * 1.8f;
                     break;
                 case EnemyType.Stone03:
-                    enemy.GetAgent().speed = 1.8f;
+                    enemy.GetAgent().speed = 1.8f * 1.8f;
                     break;
                 default:
                     break;
