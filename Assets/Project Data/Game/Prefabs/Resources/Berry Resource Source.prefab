@@ -188,7 +188,7 @@ MonoBehaviour:
   helperTaskPriority: 0
   drop:
   - currency: 100
-    amount: 6
+    amount: 10
   dropRate: 1
   dropAnimation: {fileID: 11400000, guid: 98b74e4b6c3782b4b896a1f1278a7bfa, type: 2}
   toolMessageSpawnHeight: 2
