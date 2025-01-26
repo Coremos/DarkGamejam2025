@@ -166,6 +166,6 @@ namespace Watermelon
 
 // Changelog
 // v 1.1
-// • Added manageable default amount
+// ?Added manageable default amount
 // v 1.0
-// • Basic logic
+// ?Basic logic

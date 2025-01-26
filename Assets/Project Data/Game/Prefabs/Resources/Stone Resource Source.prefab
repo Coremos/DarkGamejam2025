@@ -194,7 +194,7 @@ MonoBehaviour:
   dropAnimation: {fileID: 0}
   toolMessageSpawnHeight: 1.5
   visualsParent: {fileID: 1086232453290592709}
-  EnemyType: 0
+  EnemyType: 20103
 --- !u!208 &7407799634748380951
 NavMeshObstacle:
   m_ObjectHideFlags: 0

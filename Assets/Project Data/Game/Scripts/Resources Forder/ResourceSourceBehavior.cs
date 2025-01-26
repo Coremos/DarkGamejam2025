@@ -95,6 +95,8 @@ namespace Watermelon
 
         public BaseWorldBehavior LinkedWorldBehavior { get; set; }
 
+        public EnemyType EnemyType;
+
         [Button]
         public void DebugTask()
         {
@@ -102,8 +104,6 @@ namespace Watermelon
         }
 
         public float HealthPercentage => Health / MaxHealth;
-
-        public EnemyType EnemyType;
 
         private void Awake()
         {
@@ -155,22 +155,26 @@ namespace Watermelon
 
             //Debug.Log(gameObject.name);
             
-            if (gameObject.name.StartsWith("Tree"))
-            {
-                EnemyType = EnemyType.Tree01;
-            }
-            else if (gameObject.name.StartsWith("Stone"))
-            {
-                EnemyType = EnemyType.Stone01;
-            }
-            else if (gameObject.name.StartsWith("Berry"))
-            {
-                EnemyType = EnemyType.Stone02;
-            }
-            else
-            {
-                EnemyType = EnemyType.Stone03;
-            }
+            //if (gameObject.name.StartsWith("Tree Resource Source"))
+            //{
+            //    EnemyType = EnemyType.Tree01;
+            //}
+            //else if (gameObject.name.StartsWith("Tree Resource Source 02"))
+            //{
+            //    EnemyType = EnemyType.Tree02;
+            //}
+            //else if (gameObject.name.StartsWith("Stone"))
+            //{
+            //    EnemyType = EnemyType.Stone01;
+            //}
+            //else if (gameObject.name.StartsWith("Berry"))
+            //{
+            //    EnemyType = EnemyType.Stone02;
+            //}
+            //else
+            //{
+            //    EnemyType = EnemyType.Stone03;
+            //}
         }
 
         public void OnWorldLoaded()
