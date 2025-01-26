@@ -988,6 +988,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 976276126}
     m_Modifications:
+    - target: {fileID: 1626203775854327850, guid: 739625e0a4e127746bf6c66af9b3ddcc,
+        type: 3}
+      propertyPath: hitsToDestroy
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3884048145013742559, guid: 739625e0a4e127746bf6c66af9b3ddcc,
         type: 3}
       propertyPath: m_Name
@@ -3398,6 +3403,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 976276126}
     m_Modifications:
+    - target: {fileID: 1626203775854327850, guid: 739625e0a4e127746bf6c66af9b3ddcc,
+        type: 3}
+      propertyPath: hitsToDestroy
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3884048145013742559, guid: 739625e0a4e127746bf6c66af9b3ddcc,
         type: 3}
       propertyPath: m_Name
@@ -3991,6 +4001,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 976276126}
     m_Modifications:
+    - target: {fileID: 1626203775854327850, guid: 739625e0a4e127746bf6c66af9b3ddcc,
+        type: 3}
+      propertyPath: hitsToDestroy
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3884048145013742559, guid: 739625e0a4e127746bf6c66af9b3ddcc,
         type: 3}
       propertyPath: m_Name
@@ -4461,6 +4476,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 976276126}
     m_Modifications:
+    - target: {fileID: 1626203775854327850, guid: 739625e0a4e127746bf6c66af9b3ddcc,
+        type: 3}
+      propertyPath: hitsToDestroy
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3884048145013742559, guid: 739625e0a4e127746bf6c66af9b3ddcc,
         type: 3}
       propertyPath: m_Name
@@ -5009,6 +5029,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 976276126}
     m_Modifications:
+    - target: {fileID: 1626203775854327850, guid: 739625e0a4e127746bf6c66af9b3ddcc,
+        type: 3}
+      propertyPath: hitsToDestroy
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3884048145013742559, guid: 739625e0a4e127746bf6c66af9b3ddcc,
         type: 3}
       propertyPath: m_Name
@@ -6179,6 +6204,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 976276126}
     m_Modifications:
+    - target: {fileID: 1626203775854327850, guid: 739625e0a4e127746bf6c66af9b3ddcc,
+        type: 3}
+      propertyPath: hitsToDestroy
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3884048145013742559, guid: 739625e0a4e127746bf6c66af9b3ddcc,
         type: 3}
       propertyPath: m_Name
@@ -7225,6 +7255,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 976276126}
     m_Modifications:
+    - target: {fileID: 1626203775854327850, guid: 739625e0a4e127746bf6c66af9b3ddcc,
+        type: 3}
+      propertyPath: hitsToDestroy
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3884048145013742559, guid: 739625e0a4e127746bf6c66af9b3ddcc,
         type: 3}
       propertyPath: m_Name
@@ -8184,6 +8219,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 976276126}
     m_Modifications:
+    - target: {fileID: 1626203775854327850, guid: 739625e0a4e127746bf6c66af9b3ddcc,
+        type: 3}
+      propertyPath: hitsToDestroy
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3884048145013742559, guid: 739625e0a4e127746bf6c66af9b3ddcc,
         type: 3}
       propertyPath: m_Name
@@ -8449,6 +8489,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 976276126}
     m_Modifications:
+    - target: {fileID: 1626203775854327850, guid: 739625e0a4e127746bf6c66af9b3ddcc,
+        type: 3}
+      propertyPath: hitsToDestroy
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3884048145013742559, guid: 739625e0a4e127746bf6c66af9b3ddcc,
         type: 3}
       propertyPath: m_Name
@@ -9503,6 +9548,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 976276126}
     m_Modifications:
+    - target: {fileID: 1626203775854327850, guid: 739625e0a4e127746bf6c66af9b3ddcc,
+        type: 3}
+      propertyPath: hitsToDestroy
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3884048145013742559, guid: 739625e0a4e127746bf6c66af9b3ddcc,
         type: 3}
       propertyPath: m_Name
@@ -10062,6 +10112,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 976276126}
     m_Modifications:
+    - target: {fileID: 1626203775854327850, guid: 739625e0a4e127746bf6c66af9b3ddcc,
+        type: 3}
+      propertyPath: hitsToDestroy
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3884048145013742559, guid: 739625e0a4e127746bf6c66af9b3ddcc,
         type: 3}
       propertyPath: m_Name
@@ -10168,6 +10223,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 976276126}
     m_Modifications:
+    - target: {fileID: 1626203775854327850, guid: 739625e0a4e127746bf6c66af9b3ddcc,
+        type: 3}
+      propertyPath: hitsToDestroy
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3884048145013742559, guid: 739625e0a4e127746bf6c66af9b3ddcc,
         type: 3}
       propertyPath: m_Name
@@ -10323,6 +10383,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 976276126}
     m_Modifications:
+    - target: {fileID: 1626203775854327850, guid: 739625e0a4e127746bf6c66af9b3ddcc,
+        type: 3}
+      propertyPath: EnemyType
+      value: 20101
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626203775854327850, guid: 739625e0a4e127746bf6c66af9b3ddcc,
+        type: 3}
+      propertyPath: hitsToDestroy
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3884048145013742559, guid: 739625e0a4e127746bf6c66af9b3ddcc,
         type: 3}
       propertyPath: m_Name
@@ -10588,6 +10658,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 976276126}
     m_Modifications:
+    - target: {fileID: 1626203775854327850, guid: 739625e0a4e127746bf6c66af9b3ddcc,
+        type: 3}
+      propertyPath: hitsToDestroy
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3884048145013742559, guid: 739625e0a4e127746bf6c66af9b3ddcc,
         type: 3}
       propertyPath: m_Name
@@ -10869,6 +10944,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626203775854327850, guid: 739625e0a4e127746bf6c66af9b3ddcc,
+        type: 3}
+      propertyPath: hitsToDestroy
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1626203775854327850, guid: 739625e0a4e127746bf6c66af9b3ddcc,
         type: 3}
@@ -12911,6 +12991,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 976276126}
     m_Modifications:
+    - target: {fileID: 1626203775854327850, guid: 739625e0a4e127746bf6c66af9b3ddcc,
+        type: 3}
+      propertyPath: hitsToDestroy
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3884048145013742559, guid: 739625e0a4e127746bf6c66af9b3ddcc,
         type: 3}
       propertyPath: m_Name
@@ -13636,6 +13721,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 976276126}
     m_Modifications:
+    - target: {fileID: 1626203775854327850, guid: 739625e0a4e127746bf6c66af9b3ddcc,
+        type: 3}
+      propertyPath: hitsToDestroy
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3884048145013742559, guid: 739625e0a4e127746bf6c66af9b3ddcc,
         type: 3}
       propertyPath: m_Name
@@ -14904,6 +14994,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 976276126}
     m_Modifications:
+    - target: {fileID: 1626203775854327850, guid: 739625e0a4e127746bf6c66af9b3ddcc,
+        type: 3}
+      propertyPath: EnemyType
+      value: 20101
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626203775854327850, guid: 739625e0a4e127746bf6c66af9b3ddcc,
+        type: 3}
+      propertyPath: hitsToDestroy
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3884048145013742559, guid: 739625e0a4e127746bf6c66af9b3ddcc,
         type: 3}
       propertyPath: m_Name
