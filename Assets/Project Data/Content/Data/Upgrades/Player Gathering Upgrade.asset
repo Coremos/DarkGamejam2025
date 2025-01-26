@@ -13,27 +13,63 @@ MonoBehaviour:
   m_Name: Player Gathering Upgrade
   m_EditorClassIdentifier: 
   globalUpgradeType: 2
-  title: Player Harvesting
+  title: "\uACF5\uACA9\uB825"
   icon: {fileID: 21300000, guid: 40b0fd540fe47a645babf66f9630eb31, type: 3}
-  descriptionFormat: Increase from <color=#FF4233>{0}</color> to <color=#56D103>{1}
+  descriptionFormat: <color=#FF4233>{0}</color> -> <color=#56D103>{1}
   upgrades:
-  - price: 0
+  - price: 3
     currencyType: 0
     previewSprite: {fileID: 0}
     damageMultiplier: 1
-  - price: 250
-    currencyType: 0
-    previewSprite: {fileID: 0}
-    damageMultiplier: 1.25
-  - price: 700
-    currencyType: 0
-    previewSprite: {fileID: 0}
-    damageMultiplier: 1.5
-  - price: 1000
-    currencyType: 0
-    previewSprite: {fileID: 0}
-    damageMultiplier: 1.75
-  - price: 2000
+  - price: 7
     currencyType: 0
     previewSprite: {fileID: 0}
     damageMultiplier: 2
+  - price: 11
+    currencyType: 0
+    previewSprite: {fileID: 0}
+    damageMultiplier: 3
+  - price: 18
+    currencyType: 0
+    previewSprite: {fileID: 0}
+    damageMultiplier: 4
+  - price: 29
+    currencyType: 0
+    previewSprite: {fileID: 0}
+    damageMultiplier: 5
+  - price: 47
+    currencyType: 0
+    previewSprite: {fileID: 0}
+    damageMultiplier: 6
+  - price: 77
+    currencyType: 0
+    previewSprite: {fileID: 0}
+    damageMultiplier: 7
+  - price: 125
+    currencyType: 0
+    previewSprite: {fileID: 0}
+    damageMultiplier: 8
+  - price: 204
+    currencyType: 0
+    previewSprite: {fileID: 0}
+    damageMultiplier: 9
+  - price: 332
+    currencyType: 0
+    previewSprite: {fileID: 0}
+    damageMultiplier: 10
+  - price: 541
+    currencyType: 0
+    previewSprite: {fileID: 0}
+    damageMultiplier: 11
+  - price: 882
+    currencyType: 0
+    previewSprite: {fileID: 0}
+    damageMultiplier: 12
+  - price: 1437
+    currencyType: 0
+    previewSprite: {fileID: 0}
+    damageMultiplier: 13
+  - price: 2342
+    currencyType: 0
+    previewSprite: {fileID: 0}
+    damageMultiplier: 14

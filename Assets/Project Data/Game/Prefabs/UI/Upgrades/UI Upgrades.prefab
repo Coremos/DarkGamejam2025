@@ -229,15 +229,17 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_TextWrappingMode: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 0
+  m_ActiveFontFeatures: 
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 0
+  m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 0
   m_isOrthographic: 1
   m_isCullingEnabled: 0
@@ -1000,6 +1002,55 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6790591585449241566, guid: 771b798fae1d83249af658dc58bf4452,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 51.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6790591585449241566, guid: 771b798fae1d83249af658dc58bf4452,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 6b9a8a8abde74134aba073cc3b12ca03,
+        type: 2}
+    - target: {fileID: 6790591585449241566, guid: 771b798fae1d83249af658dc58bf4452,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -964299024068463889, guid: 6b9a8a8abde74134aba073cc3b12ca03,
+        type: 2}
+    - target: {fileID: 6790591585449241566, guid: 771b798fae1d83249af658dc58bf4452,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6790591585449241566, guid: 771b798fae1d83249af658dc58bf4452,
+        type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
+      objectReference: {fileID: 0}
+    - target: {fileID: 6888671728975571544, guid: 771b798fae1d83249af658dc58bf4452,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 6b9a8a8abde74134aba073cc3b12ca03,
+        type: 2}
+    - target: {fileID: 6888671728975571544, guid: 771b798fae1d83249af658dc58bf4452,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -964299024068463889, guid: 6b9a8a8abde74134aba073cc3b12ca03,
+        type: 2}
+    - target: {fileID: 6888671728975571544, guid: 771b798fae1d83249af658dc58bf4452,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6888671728975571544, guid: 771b798fae1d83249af658dc58bf4452,
+        type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
+      objectReference: {fileID: 0}
     - target: {fileID: 7654021796090014796, guid: 771b798fae1d83249af658dc58bf4452,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -1014,6 +1065,33 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549897214302151664, guid: 771b798fae1d83249af658dc58bf4452,
+        type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
+      objectReference: {fileID: 0}
+    - target: {fileID: 9063717936202895206, guid: 771b798fae1d83249af658dc58bf4452,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 6b9a8a8abde74134aba073cc3b12ca03,
+        type: 2}
+    - target: {fileID: 9063717936202895206, guid: 771b798fae1d83249af658dc58bf4452,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -964299024068463889, guid: 6b9a8a8abde74134aba073cc3b12ca03,
+        type: 2}
+    - target: {fileID: 9063717936202895206, guid: 771b798fae1d83249af658dc58bf4452,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9063717936202895206, guid: 771b798fae1d83249af658dc58bf4452,
+        type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
       objectReference: {fileID: 0}
     - target: {fileID: 9207283223754027654, guid: 771b798fae1d83249af658dc58bf4452,
         type: 3}

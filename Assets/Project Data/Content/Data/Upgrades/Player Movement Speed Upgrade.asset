@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Player Movement Speed Upgrade
   m_EditorClassIdentifier: 
   globalUpgradeType: 0
-  title: Player Speed
+  title: "\uC774\uB3D9\uC18D\uB3C4"
   icon: {fileID: 21300000, guid: 1540db49e90a3d14f9946fe9bf29236a, type: 3}
-  descriptionFormat: Increase from <color=#FF4233>{0}</color> to <color=#56D103>{1}
+  descriptionFormat: <color=#FF4233>{0}</color> -> <color=#56D103>{1}
   upgrades:
   - price: 0
     currencyType: 0

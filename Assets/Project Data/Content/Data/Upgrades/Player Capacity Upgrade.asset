@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Player Capacity Upgrade
   m_EditorClassIdentifier: 
   globalUpgradeType: 1
-  title: Player Capacity
+  title: "\uAC00\uBC29 \uC6A9\uB7C9"
   icon: {fileID: 21300000, guid: 23639dd3c196fc741b3441f66b2e9d55, type: 3}
-  descriptionFormat: Increase from <color=#FF4233>{0}</color> to <color=#56D103>{1}
+  descriptionFormat: <color=#FF4233>{0}</color> -> <color=#56D103>{1}
   upgrades:
   - price: 0
     currencyType: 0
