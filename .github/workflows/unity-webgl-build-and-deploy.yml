@@ -35,8 +35,9 @@ jobs:
           git add .
           git reset --hard
 
-      # # Cache
-      - uses: actions/cache@v4
+      # Cache
+      - name: Caching
+        uses: actions/cache@v4
         with:
           path: Library
           key: Library-${{ hashFiles('Assets/**', 'Packages/**', 'ProjectSettings/**') }}
@@ -59,7 +60,7 @@ jobs:
           sudo rm -rf /opt/ghc
           df -h
 
-      # # Build
+      # Build
       - name: Build project
         uses: game-ci/unity-builder@v4
         env:
@@ -70,12 +71,6 @@ jobs:
           targetPlatform: ${{ vars.TARGET_PLATFORM }}
           buildsPath: ${{ vars.BUILD_PATH }}
           allowDirtyBuild: true
-      # Output: Artifact
-      - name: Upload Build Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: ${{ vars.ARTIFACT_NAME }}
-          path: ${{ vars.BUILD_PATH }}
       # Deployment
       - name: Stash build result and reset local changes
         run: |
@@ -85,8 +80,8 @@ jobs:
           git config --global user.name "${{ secrets.GH_USERNAME }}"
           git config --global advice.addIgnoredFile false
           echo "Stash and reset"
-          git add ${{ vars.BUILD_PATH }}/${{ vars.TARGET_PLATFORM }}
-          git stash push ${{ vars.BUILD_PATH }}/${{ vars.TARGET_PLATFORM }}
+          git add ${{ vars.BUILD_PATH }}/${{ vars.TARGET_PLATFORM }}/*
+          git stash push
           git stash list
           git reset --hard
           sudo git clean -d -x -f
@@ -109,15 +104,6 @@ jobs:
         run: |
           echo "Applying stash"
           git stash apply stash@{0}
-      - name: Copying files to root directory
-        run: |
-          cd ${{ vars.BUILD_PATH }}/${{ vars.TARGET_PLATFORM }}/${{ vars.TARGET_PLATFORM }}
-          ls
-          cp -r * ../../../
-          cd ../../../
-          rm -r ${{ vars.BUILD_PATH }}
-          ls
-          pwd
       - name: Pushing deployment to gh-pages branch
         run: |
           pwd
