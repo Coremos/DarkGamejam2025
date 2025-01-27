@@ -48,9 +48,15 @@ jobs:
           sudo swapoff -a
           sudo rm -f /swapfile
           sudo apt clean
-          if [ "$(docker images -q)" != "" ]; then
-            docker rmi $(docker images -q)
+          if [ "$(docker ps -aq)" ]; then
+            docker rm $(docker ps -aq)
           fi
+          if [ "$(docker images -q)" ]; then
+            docker rmi -f $(docker images -q)
+          fi
+          sudo rm -rf /usr/share/dotnet
+          sudo rm -rf /usr/local/lib/android
+          sudo rm -rf /opt/ghc
           df -h
 
       # # Build
