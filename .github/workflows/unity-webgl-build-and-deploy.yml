@@ -35,7 +35,7 @@ jobs:
           git add .
           git reset --hard
 
-      # # Cache
+      # Cache
       - uses: actions/cache@v4
         with:
           path: Library
@@ -59,7 +59,7 @@ jobs:
           sudo rm -rf /opt/ghc
           df -h
 
-      # # Build
+      # Build
       - name: Build project
         uses: game-ci/unity-builder@v4
         env:
@@ -68,14 +68,9 @@ jobs:
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
         with:
           targetPlatform: ${{ vars.TARGET_PLATFORM }}
-          #buildsPath: ${{ vars.BUILD_PATH }}
+          buildsPath: ${{ vars.BUILD_PATH }}
           allowDirtyBuild: true
-      # Output: Artifact
-      - name: Upload Build Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: ${{ vars.ARTIFACT_NAME }}
-          path: ${{ vars.BUILD_PATH }}
+
       # Deployment
       - name: Stash build result and reset local changes
         run: |
@@ -90,6 +85,7 @@ jobs:
           git stash list
           git reset --hard
           sudo git clean -d -x -f
+
     # Deployment
       - name: Cleaning gh-pages branch
         run: |
@@ -105,6 +101,7 @@ jobs:
           git add *
           git commit -m "cleaning branch"
           git push
+
       - name: Applying stashed files to ${{ vars.DEPLOYMENT_BRANCH }}
         run: |
           echo "Applying stash"
@@ -115,7 +112,7 @@ jobs:
           ls
           cp -r * ../../../
           cd ../../../
-          rm -r ${{ vars.BUILD_PATH }}
+          rm -rf ${{ vars.BUILD_PATH }}
           ls
           pwd
       - name: Pushing deployment to gh-pages branch
