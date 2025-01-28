@@ -34,15 +34,14 @@ jobs:
           git lfs pull
           git add .
           git reset --hard
-
       # Cache
-      - uses: actions/cache@v4
+      - name: Free Disk Space
+        uses: actions/cache@v4
         with:
           path: Library
           key: Library-${{ hashFiles('Assets/**', 'Packages/**', 'ProjectSettings/**') }}
           restore-keys: |
             Library-
-
       - name: Free Disk Space
         run: |
           sudo swapoff -a
@@ -58,7 +57,6 @@ jobs:
           sudo rm -rf /usr/local/lib/android
           sudo rm -rf /opt/ghc
           df -h
-
       # Build
       - name: Build project
         uses: game-ci/unity-builder@v4
@@ -70,7 +68,12 @@ jobs:
           targetPlatform: ${{ vars.TARGET_PLATFORM }}
           buildsPath: ${{ vars.BUILD_PATH }}
           allowDirtyBuild: true
-
+      # Output: Artifact
+      - name: Upload Build Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ vars.ARTIFACT_NAME }}
+          path: ${{ vars.BUILD_PATH }}
       # Deployment
       - name: Stash build result and reset local changes
         run: |
@@ -85,7 +88,6 @@ jobs:
           git stash list
           git reset --hard
           sudo git clean -d -x -f
-
     # Deployment
       - name: Cleaning gh-pages branch
         run: |
@@ -101,7 +103,6 @@ jobs:
           git add *
           git commit -m "cleaning branch"
           git push
-
       - name: Applying stashed files to ${{ vars.DEPLOYMENT_BRANCH }}
         run: |
           echo "Applying stash"
